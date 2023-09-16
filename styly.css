@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 360px;
+  height: 615px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hraci-pole {
+  width: 360px;
+}
+
+.piskvorky {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+
+}
+
+
+
+.tlacitka {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90px;
+
+}
+
+button {
+  flex-grow: 1;
+}
+
+614px
