@@ -19,8 +19,7 @@ body {
 .kontejner {
   display: flex;
   flex-direction: column;
-  width: 360px;
-  height: 610px;
+  width: 350px;
 }
 
 
