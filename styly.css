@@ -9,37 +9,26 @@ body {
 
 
 
-
 .layout {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-
-
 }
 
 .kontejner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 345px;
-  height: 550px;
-
-
+  width: 360px;
+  height: 610px;
 }
 
-.hraci-pole {
-  width: 345px;
-}
+
 
 .piskvorky {
   text-align: center;
   background-color: #283e50;
   height: 100%;
-
-
-
-
 }
 
 
@@ -47,10 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
-
-
-
 }
 
 button {
@@ -58,40 +43,39 @@ button {
   height: 50px;
   border: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .tlacitka__pravidla {
   background-color: #1fcca4;
-  border-top: solid 1px black;
+  border-top: solid 1px #283e50;
 }
 
 .tlacitka__pravidla:hover {
   background-color: #1cbb96;
+  cursor: pointer;
 }
 
 .tlacitka__zacit-hrat {
   background-color: #0197f6;
-  border-top: solid 1px black;
+  border-top: solid 1px #283e50;
 }
 
 .tlacitka__zacit-hrat:hover {
   background-color: #0090e9;
+  cursor: pointer;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 3em;
   font-weight: normal;
-
-
 }
 
 p {
   color: #ffffff;
-  line-height: 20px;
+  line-height: 130%;
   font-family: sans-serif;
-
-
+  padding: 0 2% 0 2%;
 }
