@@ -2,17 +2,29 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(#9198e5, #e66465);
+
+}
+
+
+
+
+.layout {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+
+}
+
 .kontejner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 2px solid black; */
   width: 345px;
   height: 550px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
 
 }
 
