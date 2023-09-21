@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(#9198e5, #e66465);
+  background: linear-gradient(#615dad, #ffc8da);
 
 }
 
@@ -19,15 +19,20 @@ body {
 .kontejner {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 370px;
+
 }
 
+img {
+  border-radius: 10px 10px 0 0;
+}
 
 
 .piskvorky {
   text-align: center;
   background-color: #283e50;
   height: 100%;
+
 }
 
 
@@ -76,5 +81,5 @@ p {
   color: #ffffff;
   line-height: 130%;
   font-family: sans-serif;
-  padding: 0 2% 0 2%;
+  padding: 0 5% 0 5%;
 }
