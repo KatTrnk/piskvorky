@@ -151,10 +151,6 @@ p {
   margin-right: 20px;
   height: 100%;
 
-
-  background: linear-gradient(rgba(214, 182, 214, 0.673), rgba(233, 202, 207, 0.916));
-
-
 }
 
 .policka .button {
@@ -163,34 +159,23 @@ p {
   flex: 1;
   box-sizing: border-box;
   text-align: center;
-  max-height: 5em;
-  max-width: 5em;
+  max-height: 10%;
+  max-width: 10%;
   flex-basis: calc(100% / 10);
   justify-content: center;
-  background-color: linear-gradient(rgba(214, 182, 214, 0.673), rgba(233, 202, 207, 0.916));
 
 }
 
 .policka button {
   height: 100%;
   width: 100%;
-  background-color: inherit;
+  background-color: rgb(255, 255, 255, 0.3);
   cursor: pointer;
   transition-duration: 0.4s;
-  /* background: linear-gradient(rgba(214, 182, 214, 0.673), rgba(233, 202, 207, 0.916)); */
-  /
-  /* background: linear-gradient(rgb(193, 156, 193), rgb(228, 183, 190)); */
-
 
 }
 
 .policka .button:hover {
-  background-color:
-    -webki:brightness(1.1);
+  background-color: rgb(255, 255, 255, 0.35);
 
 }
-
-
-/* backdrop-filter: brightness (1.75); */
-/* filter: brightness(1.5) */
-/* background-color: green; */
