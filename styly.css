@@ -110,7 +110,7 @@ p {
 
 .Hra__hraje {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 5px;
   text-transform: uppercase;
   font-weight: bold;
@@ -138,13 +138,13 @@ p {
 }
 
 .Hra__ikonky--domu:hover {
-  background-color: rgb(31, 204, 165, 0.8);
+  background-color: #1cbb96;
   cursor: pointer;
 
 }
 
 .Hra__ikonky--restart {
-  background-color: #0090e9;
+  background-color: #0197f6;
   border: none;
   border-radius: 5px;
   height: 2.5rem;
@@ -152,7 +152,7 @@ p {
 }
 
 .Hra__ikonky--restart:hover {
-  background-color: rgb(0, 144, 233, 0.7);
+  background-color: #0090e9;
   cursor: pointer;
 }
 
