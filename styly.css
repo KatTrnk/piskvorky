@@ -91,7 +91,7 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 80vmin;
-  height: 80vh;
+  max-height: 50em;
 }
 
 /* Horní část */
@@ -119,7 +119,7 @@ p {
   background-image: url(circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1.4rem;
+  background-size: 13%;
   height: 40px;
 }
 
@@ -196,26 +196,26 @@ button:focus {
   background-image: url(circle_black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2rem;
+  background-size: 45%;
 }
 
 .board__field--cross {
   background-image: url(cross_black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2rem;
+  background-size: 45%;
 }
 
 .Hra__hraje--krizek {
   background-image: url(cross.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1.5rem;
+  background-size: 13%;
 }
 
 .Hra__hraje--kolecko {
   background-image: url(circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1.5rem;
+  background-size: 12%;
 }
