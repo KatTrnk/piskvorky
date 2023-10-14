@@ -1,3 +1,5 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
 let currentPlayer = document.querySelector('.Hra__hraje');
 
 let click = 0;
@@ -12,18 +14,8 @@ const selectBtn = (event) => {
     currentPlayer.classList.toggle('Hra__hraje--krizek');
   }
   event.target.disabled = true;
+  selectBtnArray();
 };
-
-document.querySelector('#btn1').addEventListener('click', selectBtn);
-document.querySelector('#btn2').addEventListener('click', selectBtn);
-document.querySelector('#btn3').addEventListener('click', selectBtn);
-document.querySelector('#btn4').addEventListener('click', selectBtn);
-document.querySelector('#btn5').addEventListener('click', selectBtn);
-document.querySelector('#btn6').addEventListener('click', selectBtn);
-document.querySelector('#btn7').addEventListener('click', selectBtn);
-document.querySelector('#btn8').addEventListener('click', selectBtn);
-document.querySelector('#btn9').addEventListener('click', selectBtn);
-document.querySelector('#btn10').addEventListener('click', selectBtn);
 
 const confirm = (event) => {
   const response = window.confirm('Opravdu chceš začít znovu?');
@@ -33,3 +25,34 @@ const confirm = (event) => {
 };
 
 document.querySelector('#restart').addEventListener('click', confirm);
+
+document.querySelectorAll('.Hra__policka button').forEach((policko) => {
+  policko.addEventListener('click', selectBtn);
+});
+
+const selectBtnArray = () => {
+  const allButtonsElm = document.querySelectorAll('.Hra__policka button');
+
+  const allButtonsArray = Array.from(allButtonsElm).map((policka) => {
+    if (policka.classList.contains('board__field--circle')) {
+      return 'o';
+    }
+    if (policka.classList.contains('board__field--cross')) {
+      return 'x';
+    }
+    return '_';
+  });
+
+  const winner = findWinner(allButtonsArray);
+  if (winner === 'o' || winner === 'x') {
+    setTimeout(() => {
+      alert(`Vyhrál hráč se symbolem ${winner}`);
+      location.reload();
+    }, 800);
+  } else if (winner === 'tie') {
+    setTimeout(() => {
+      alert('Hra skončila nerozhodně!');
+      location.reload();
+    }, 800);
+  }
+};
