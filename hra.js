@@ -55,4 +55,30 @@ const selectBtnArray = () => {
       location.reload();
     }, 800);
   }
+
+  const checkPlayer = async () => {
+    const player = 'x';
+
+    const responseAPI = await fetch(
+      'https://piskvorky.czechitas-podklady.cz/api/suggest-next-move',
+      {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify({
+          board: allButtonsArray,
+          player: player,
+        }),
+      },
+    );
+    const data = await responseAPI.json();
+    const { x, y } = data.position;
+    const buttons = allButtonsElm[x + y * 10];
+    buttons.click();
+  };
+
+  if (currentPlayer.classList.contains('Hra__hraje--krizek')) {
+    checkPlayer();
+  }
 };
